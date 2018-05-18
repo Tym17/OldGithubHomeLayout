@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Github home's old columns layout",
+  "version": "1.0",
+
+  "description": "Places the newsfeed on the left side of the page like it was before so your repositories are shown on the right.",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/"],
+      "js": ["js/swapthem.js"]
+    }
+  ]
+}
